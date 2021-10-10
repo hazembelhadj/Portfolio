@@ -1,0 +1,39 @@
+@import './styles/layout.scss';
+@import './styles/navbar.scss';
+@import './styles/typography.scss';
+@import './styles/title.scss';
+@import './styles/about.scss';
+@import './styles/skill.scss';
+@import './styles/services.scss';
+@import './styles/blogs.scss';
+@import './styles/contact.scss';
+@import './styles/forms.scss';
+@import './styles/portfolio.scss';
+
+
+
+
+
+
+
+
+
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    color: #a4acc4;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-size: 1.2rem;
+    
+}
+span{
+    color: #037FFF;
+}
+

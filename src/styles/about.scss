@@ -1,0 +1,137 @@
+.AboutPage{
+   margin: 5rem 10rem ;
+ .ImageSection{
+    margin-top: 5rem;
+    display: flex;
+    margin-bottom: 4rem;
+    width:auto;
+   
+    
+    @media screen and (max-width:1200px){
+        flex-direction: column;
+        .img{
+            margin-bottom: 2rem;
+        }
+    }
+    .img{
+        width: 120%;
+        img{
+            width: 95%;
+            object-fit: cover;
+            height: 75vh;
+            
+        }
+    }}
+    .about-info{
+        width: 130%;
+        h4{
+            font-size: 2rem;
+            color: var(--white-color);
+            span{
+                font-size: 2rem;
+            }
+        }
+        .paragraph{
+            padding: 1rem 0;
+            font-size: 0rem;
+        }
+        .about-details{
+            display: flex;
+            padding-bottom: 1.2rem;
+            flex-direction: row;
+          
+            .left-section {
+                padding-right: 3rem 0;
+                p{
+                    font-weight: 600;
+                }
+            }
+            .left-section .right-section{
+                p{
+                    padding: 5rem 0;
+                }
+            }
+        }
+    }
+
+
+.btn{
+    padding: 0.5rem 1rem;
+    background-color: #037FFF;
+    outline: none;
+    border: none;
+    font-family: inherit;
+    font-size: inherit;
+    color: white;
+    text-transform: uppercase;
+    cursor: pointer;
+    letter-spacing: 2px;
+    margin-top: -0.5rem;
+    position: relative;
+    &::after{
+        position: absolute;
+        content: "";
+        width: 0;
+        height: .3rem;
+        left: 0;
+        bottom: 0;
+        background-color: #a4acc4;;
+        transition: all 0.4s ease-in-out;
+    }
+    &:hover::after{
+        width: 100%;
+    }
+}
+
+.skillsContainer{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 4rem;
+    row-gap: 3rem;
+    margin: 4rem 0;
+    @media screen and (max-width: 1100px){
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+.btn-port{
+    padding: .6rem 2rem;
+    background-color: #0381ff5b;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: inherit;
+    font-family: inherit;
+    color: white;
+    margin-bottom: 1rem;
+    transition: all .3s ease-in-out;
+    &:not(:last-child){
+        margin-right: 1rem;
+    }
+    &:hover{
+        background-color: #037FFF;
+    }
+    &:active{
+        background-color: #037FFF;
+    }
+    &:focus{
+        background-color: #037FFF;
+    }
+    
+
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4rem 10rem;
+    flex-wrap: wrap;
+    @media screen and (max-width: 1270px){
+        margin: 2rem 5rem;
+    }
+    @media screen and (max-width: 1100px){
+        margin: 2rem 2rem;
+    }
+}
+}
